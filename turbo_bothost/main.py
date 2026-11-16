@@ -1,4 +1,9 @@
 import os
+import subprocess
+import sys
+
+subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", os.path.join(os.path.dirname(os.path.abspath(__file__)), "requirements.txt")])
+
 import threading
 import telebot
 import uvicorn
