@@ -2,7 +2,8 @@ import os
 import subprocess
 import sys
 
-subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", os.path.join(os.path.dirname(os.path.abspath(__file__)), "requirements.txt")])
+pkgs = ["fastapi", "uvicorn", "python-multipart", "requests", "edge-tts", "pypdf", "python-docx", "pyTelegramBotAPI"]
+subprocess.check_call([sys.executable, "-m", "pip", "install", *pkgs])
 
 import threading
 import telebot
