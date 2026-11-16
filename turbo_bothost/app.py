@@ -11,7 +11,7 @@ from fastapi.responses import FileResponse, Response
 from pydantic import BaseModel
 from pypdf import PdfReader
 
-ROUTER_API_KEY = os.environ.get("ROUTER_API_KEY", "")
+OPENROUTER_KEY = os.environ.get("OPENROUTER_KEY", "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")
 
 app = FastAPI()
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
