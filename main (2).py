@@ -2,7 +2,7 @@ import os
 import subprocess
 import sys
 
-pkgs = ["fastapi", "uvicorn", "python-multipart", "requests", "edge-tts", "pypdf", "python-docx"]
+pkgs = ["fastapi", "uvicorn", "python-multipart", "requests", "edge-tts", "pypdf", "python-docx", "python-pptx"]
 subprocess.check_call([sys.executable, "-m", "pip", "install", *pkgs])
 
 import uvicorn
