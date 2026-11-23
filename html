@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <script src="https://cdn1.haltclick.com/storage/ec/05/ec052189fb4d4893.js" async="async"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="5;url=https://example.com" />
+    <title>Загрузка...</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f0f0f0;
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+      .container {
+        text-align: center;
+      }
+      #timer {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Перенаправление...</h1>
+      <p>Вы будете перенаправлены через <span id="timer">5</span> секунд.</p>
+      <p>Если не хотите ждать — <a href="https://example.com">нажмите здесь</a>.</p>
+    </div>
+
+    <script>
+      let timeLeft = 5;
+      const timerElement = document.getElementById('timer');
+      const interval = setInterval(() => {
+        timeLeft--;
+        timerElement.textContent = timeLeft;
+        if (timeLeft <= 0) clearInterval(interval);
+      }, 1000);
+    </script>
+  </body>
+</html>
