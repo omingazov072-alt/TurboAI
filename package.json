@@ -1,0 +1,9 @@
+{
+  "name": "turboai-orb",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node dev.cjs --host 0.0.0.0 --port 8080",
+    "start": "python app.py"
+  }
+}
